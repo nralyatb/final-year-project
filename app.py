@@ -5,8 +5,7 @@ from tensorflow import keras
 from keras.preprocessing import image
 from img_classification import teachable_machine_classification
 
-st.title("Image Classification with Google's Teachable Machine")
-st.header("Traditional Kuih Classification")
+st.title("Traditional Kuih Classification")
 st.subheader("This app is built to classify traditional kuih. Upload a traditional kuih image for image classification to identify what kuih it is")
 
 
