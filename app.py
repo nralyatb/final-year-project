@@ -7,7 +7,7 @@ from img_classification import teachable_machine_classification
 
 st.title("Traditional Kuih Classification")
 st.header("- This app is built to classify traditional kuih")
-st.text("Upload a traditional kuih image for image classification to identify what kuih it is.")
+st.subheader("Upload a traditional kuih image for image classification to identify what kuih it is.")
 
 import base64
 def add_bg_from_local(image_file):
@@ -37,11 +37,13 @@ if uploaded_file is not None:
         time.sleep(1)
         label = teachable_machine_classification(image, 'keras_model.h5')    
         if label == 0:
-            st.success("This is a success message!")
+            st.success("Successfully classified!")
             st.write("Kuih Lapis")
         elif label == 1:
+            st.success("Successfully classified!")
             st.write("Onde-Onde")
         elif label == 2:
+            st.success("Successfully classified!")
             st.write("Kuih Talam")
         else: 
             st.write("Not in class")
