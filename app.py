@@ -6,7 +6,7 @@ from keras.preprocessing import image
 from img_classification import teachable_machine_classification
 
 st.title("Traditional Kuih Classification")
-st.header("This app is built to classify traditional kuih. ")
+st.header("- This app is built to classify traditional kuih")
 st.text("Upload a traditional kuih image for image classification to identify what kuih it is.")
 
 import base64
