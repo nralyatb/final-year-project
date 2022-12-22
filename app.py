@@ -23,7 +23,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('Streamlit FYP Background.png')  
+add_bg_from_local('background.png')  
 
 
 uploaded_file = st.file_uploader("Upload a traditional kuih image...", type="jpg")
