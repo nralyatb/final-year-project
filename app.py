@@ -43,23 +43,11 @@ if uploaded_file is not None:
                 st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("Kuih Lapis")
                 with st.expander("See recipe"):
-                    st.write("
-                                1 cup rice flour
-                                1⁄2 cup
-                                wheat flour
-                                2 tbsp
-                                tapioca flour
-                                1⁄2 cup
-                                sugar
-                                1 tsp
-                                salt
-                                2 1⁄2 cups
-                                coconut milk
-                                1 tsp
-                                red food colouring
-                                1⁄2 tbsp
-                                oil
-                             ")
+                        ingredients = [    "1 cup rice flour",    "1/2 cup wheat flour",    "2 tbsp tapioca flour",    "1/2 cup sugar",    "1 tsp salt",    "2 1/2 cups coconut milk",    "1 tsp red food coloring",    "1/2 tbsp oil"]
+
+                        for ingredient in ingredients:
+                            print(ingredient)
+
             elif label == 1:
                 st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("Onde-Onde")   
