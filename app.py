@@ -38,17 +38,33 @@ if uploaded_file is not None:
         label, accuracy = teachable_machine_classification(image, 'keras_model.h5')    
         
         if accuracy > 0.9:
-            if label == 0:
-                st.success('This is a success message!')
+            st.success('This is a success message!')
+            if label == 0:        
+                st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("Kuih Lapis")
-                #st.write("Recipe: ")
-                st.write(f'(Accuracy: {accuracy:.3f})')
+                with st.expander("See recipe"):
+                    st.write("
+                                1 cup rice flour
+                                1⁄2 cup
+                                wheat flour
+                                2 tbsp
+                                tapioca flour
+                                1⁄2 cup
+                                sugar
+                                1 tsp
+                                salt
+                                2 1⁄2 cups
+                                coconut milk
+                                1 tsp
+                                red food colouring
+                                1⁄2 tbsp
+                                oil")
             elif label == 1:
-                st.write("Onde-Onde")
-                st.write(f'(Accuracy: {accuracy:.3f})')
+                st.write(f'(Accuracy: {accuracy:.2f})')
+                st.write("Onde-Onde")   
             elif label == 2:
+                st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("Kuih Talam")
-                st.write(f'(Accuracy: {accuracy:.3f})')
         else:
             st.write("Unable to identify")
     
