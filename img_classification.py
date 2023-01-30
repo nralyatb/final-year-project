@@ -25,7 +25,6 @@ def teachable_machine_classification(img, weights_file):
     # Load the image into the array
     data[0] = normalized_image_array
 
-
     # run the inference
     prediction = model.predict(data)
 
