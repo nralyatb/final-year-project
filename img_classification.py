@@ -22,17 +22,9 @@ def teachable_machine_classification(img, weights_file):
     # Normalize the image
     normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
 
-    # Load the test data and labels
-    # x_test, y_test = ...
-
-    # Evaluate the model on the test data
-    # loss, accuracy = model.evaluate(x_test,y_test)
-
     # Load the image into the array
     data[0] = normalized_image_array
 
-    # Output the accuracy
-    # st.write(f'Accuracy: {accuracy:.2f}')
 
     # run the inference
     prediction = model.predict(data)
