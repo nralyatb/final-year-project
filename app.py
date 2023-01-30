@@ -73,7 +73,7 @@ if uploaded_file is not None:
                     st.write("120 ml pandan leaf extract")
                     st.write("140 g palm sugar (gula melaka)")
                     
-                    st.write("**Instructions**:)
+                    st.write("**Instructions**:")
                     st.write("1. Add water and salt to the desiccated coconut. Mix well and steam the mixture for 15 to 20 minutes.")
                     st.write("2. Mix glutinous rice flour, tapioca flour and sugar evenly before adding pandan leaf extract to create a dough. If the dough is too soft, add more glutinous rice flour.")
                     st.write("3. Divide the dough into 14 little balls. Flatten dough and wrap chunks of 5g palm sugar in it. Be careful that the dough is not too thin as it will expand during the cooking process. This will result in the dough cracking and the palm sugar flowing out.")
