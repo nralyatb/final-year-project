@@ -35,18 +35,22 @@ if uploaded_file is not None:
         
     with st.spinner("Classifying..."):
         time.sleep(1)
-        label = teachable_machine_classification(image, 'keras_model.h5')    
-        if label == 0:
-            st.success("Successfully classified!")
-            st.write("Kuih Lapis")
-        elif label == 1:
-            st.success("Successfully classified!")
-            st.write("Onde-Onde")
-        elif label == 2:
-            st.success("Successfully classified!")
-            st.write("Kuih Talam")
-        else: 
-            st.write("Not in class")
+        label, accuracy = teachable_machine_classification(image, 'keras_model.h5')    
+        
+        if accuracy > 0.9:
+            if label == 0:
+                st.success('This is a success message!')
+                st.write("Kuih Lapis")
+                #st.write("Recipe: ")
+                st.write(f'(Accuracy: {accuracy:.3f})')
+            elif label == 1:
+                st.write("Onde-Onde")
+                st.write(f'(Accuracy: {accuracy:.3f})')
+            elif label == 2:
+                st.write("Kuih Talam")
+                st.write(f'(Accuracy: {accuracy:.3f})')
+        else:
+            st.write("Unable to identify")
     
         
     
