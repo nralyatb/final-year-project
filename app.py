@@ -58,7 +58,8 @@ if uploaded_file is not None:
                                 1 tsp
                                 red food colouring
                                 1⁄2 tbsp
-                                oil")
+                                oil
+                             ")
             elif label == 1:
                 st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("Onde-Onde")   
