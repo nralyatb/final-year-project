@@ -116,7 +116,7 @@ if uploaded_file is not None:
 
                 
         else:
-            st.write("Unable to identify")
+            st.error('Error to Identify', icon="🚨")
     
         
     
