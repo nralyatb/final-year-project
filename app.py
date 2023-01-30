@@ -112,9 +112,7 @@ if uploaded_file is not None:
                     st.write("7. Using the same method as in the green mixture, cook white mixture until thickened, remove from heat, and mix until smooth.")
                     st.write("8. Pour thickened white mixture onto cooked green layer, steam over medium heat for 15-16 minutes.")
                     st.write("9. Set aside the Steamed Kuih Talam to cool completely.")
-                    st.write("10. When cooled, cut into pieces using an oil-coated knife (clean the knife with oil-coated kitchen towel after several cuts before continuing with the remaining).")
-
-                
+                    st.write("10. When cooled, cut into pieces using an oil-coated knife (clean the knife with oil-coated kitchen towel after several cuts before continuing with the remaining).")              
         else:
             st.error('Error to Identify', icon="🚨")
     
