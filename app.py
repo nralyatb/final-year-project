@@ -38,10 +38,10 @@ if uploaded_file is not None:
         label, accuracy = teachable_machine_classification(image, 'keras_model.h5')    
         
         if accuracy > 0.9:
-            st.success('This is a success message!')
+            st.success('Classification Successful!')
             if label == 0:        
                 st.write(f'(Accuracy: {accuracy:.2f})')
-                st.write("Kuih Lapis")
+                st.write("**Kuih Lapis**")
                 with st.expander("See recipe"):
                     st.write("**Ingredients**:")
                     st.write("- 1 cup rice flour")
@@ -61,7 +61,7 @@ if uploaded_file is not None:
                     st.write("5. Using an 8 inch square or round mould, grease it with a bit of oil or line it with food-grade plastic. Place it into the steamer and pour 1/3 cup of pink batter into the mould. Cover with the lid to steam the batter for 5 minutes. Then, pour another 1/3 cup of white batter to steam. Repeat the process until batter is used up.")
             elif label == 1:
                 st.write(f'(Accuracy: {accuracy:.2f})')
-                st.write("Onde-Onde")
+                st.write("**Onde-Onde**")
                 with st.expander("See recipe"):
                     st.write("**Ingredients**:")
                     st.write("2 tbsp water")
@@ -82,7 +82,7 @@ if uploaded_file is not None:
 
             elif label == 2:
                 st.write(f'(Accuracy: {accuracy:.2f})')
-                st.write("Kuih Talam")
+                st.write("**Kuih Talam**")
                 with st.expander("See recipe"):
                     st.write("**Ingredients**:")
                     st.write("For green layer:")
@@ -114,7 +114,7 @@ if uploaded_file is not None:
                     st.write("9. Set aside the Steamed Kuih Talam to cool completely.")
                     st.write("10. When cooled, cut into pieces using an oil-coated knife (clean the knife with oil-coated kitchen towel after several cuts before continuing with the remaining).")              
         else:
-            st.error('Error to Identify', icon="🚨")
+            st.error('**Error to Identify**', icon="🚨")
     
         
     
