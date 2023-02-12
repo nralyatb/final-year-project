@@ -62,10 +62,6 @@ if uploaded_file is not None:
             elif label == 1:
                 st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("**Onde-Onde**")
-                # Add a message with styling
-                message = "The image has been successfully classified as:"
-                st.write(message, " ", st.markdown("**Traditional Kuih**"))
-                st.success("😋")
                 with st.expander("See recipe"):
                     st.write("**Ingredients**:")
                     st.write("2 tbsp water")
@@ -118,7 +114,8 @@ if uploaded_file is not None:
                     st.write("9. Set aside the Steamed Kuih Talam to cool completely.")
                     st.write("10. When cooled, cut into pieces using an oil-coated knife (clean the knife with oil-coated kitchen towel after several cuts before continuing with the remaining).")              
         else:
-            st.error('**Error to Identify**', icon="🚨")
+            #st.error('**Error to Identify**', icon="🚨")
+            st.write("Incorrect Classification!", "", st.markdown("Accuracy was below 90% 💔"))
     
         
     
