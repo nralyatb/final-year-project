@@ -114,8 +114,7 @@ if uploaded_file is not None:
                     st.write("9. Set aside the Steamed Kuih Talam to cool completely.")
                     st.write("10. When cooled, cut into pieces using an oil-coated knife (clean the knife with oil-coated kitchen towel after several cuts before continuing with the remaining).")              
         else:
-            #st.error('**Error to Identify**', icon="🚨")
-            st.write("Incorrect Classification!", "", st.markdown("Accuracy was below 90% 💔"))
+            st.error('**Error to Identify**', icon="🚨")
     
         
     
