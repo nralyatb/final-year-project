@@ -62,6 +62,7 @@ if uploaded_file is not None:
             elif label == 1:
                 st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("**Onde-Onde**")
+                st.success("😋")
                 with st.expander("See recipe"):
                     st.write("**Ingredients**:")
                     st.write("2 tbsp water")
