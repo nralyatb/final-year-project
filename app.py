@@ -62,6 +62,9 @@ if uploaded_file is not None:
             elif label == 1:
                 st.write(f'(Accuracy: {accuracy:.2f})')
                 st.write("**Onde-Onde**")
+                # Add a message with styling
+                message = "The image has been successfully classified as:"
+                st.write(message, " ", st.markdown("**Traditional Kuih**"))
                 st.success("😋")
                 with st.expander("See recipe"):
                     st.write("**Ingredients**:")
